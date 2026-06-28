@@ -7,6 +7,25 @@
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Firebase SDK 추가 -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+
+<script>
+  // 복사한 설정값 입력
+const firebaseConfig = {
+  apiKey: "AIzaSyCLSV-K6XjcGRPzG9iasBKQn8bzwHE60fs",
+  authDomain: "wpss-3bc47.firebaseapp.com",
+  projectId: "wpss-3bc47",
+  storageBucket: "wpss-3bc47.firebasestorage.app",
+  messagingSenderId: "864781554318",
+  appId: "1:864781554318:web:8934ba687e380641f3afdf"
+};
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script>
+
     
     <!-- FontAwesome (아이콘) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
